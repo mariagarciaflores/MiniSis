@@ -1,11 +1,17 @@
 (function () {
     'use strict';
 
-    angular.module('app.task', []).controller('TaskController', TaskController);
+    angular.module('app.task', []).controller('TaskListController', TaskListController);
 
-    TaskController.$inject = ['UserService'];
-    function TaskController(UserService) {
+    TaskListController.$inject = ['UserService'];
+    
+    function TaskListController(UserService) {
         var vm = this;
+        vm.task = {
+            title: 'task1',
+            description: 'first task'
+        };
+        
         vm.getTasks = function () {
             var tasks = [];
             UserService.getTasks(onSuccess, onError);
