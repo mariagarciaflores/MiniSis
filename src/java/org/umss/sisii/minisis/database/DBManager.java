@@ -39,7 +39,7 @@ public class DBManager {
     private void conectar(){
     if(connection != null){
             return;
-        }  
+        }
         String url = "jdbc:postgresql://localhost:5432/mini_sis_database";
         String password = "postgres";
         try {

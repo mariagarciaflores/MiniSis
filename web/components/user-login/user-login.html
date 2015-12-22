@@ -6,14 +6,17 @@
 
         <p>
             <label>User name</label>
-            <input class="w3-input" ng-model="userLogin.userName" type="text" placeholder="your username " ></p>
-
+            <input class="w3-input" ng-model="userLogin.userName" type="text" placeholder="your username " >
+        </p>
         <p>
             <label>password</label>
-            <input class="w3-input" ng-model="userLogin.userPassword" type="password" placeholder="your password"></p>
-        <input  class="w3-btn  w3w3-xlarge-round w3-purple w3-border "
-                type="submit"
-                value="Sing in"
-                ng-click="userLogin.verifyUser()">
+            <input class="w3-input" ng-model="userLogin.userPassword" type="password" placeholder="your password">
+        </p>
+        <a ng-href="taskList">
+            <input  class="w3-btn  w3w3-xlarge-round w3-purple w3-border "
+                    type="submit"
+                    value="Sing in"
+                    ng-click="userLogin.verifyUser()">
+        </a>
     </form>
 </div>
